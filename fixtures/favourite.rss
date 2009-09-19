@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Twitter / Favorites from simonj</title>
+    <link>http://twitter.com/simonj/favorites</link>
+    <atom:link type="application/rss+xml" href="http://twitter.com/favorites/40573.rss" rel="self"/>
+    <description>Twitter updates favorited by Simon Jefford / simonj.</description>
+    <language>en-us</language>
+    <ttl>40</ttl>
+    <item>
+      <title>MacRuby: Creating PDFs with MacRuby http://bit.ly/Hc5ct (via @elctech)</title>
+      <description>MacRuby: Creating PDFs with MacRuby http://bit.ly/Hc5ct (via @elctech)</description>
+      <pubDate>Fri, 18 Sep 2009 16:54:08 +0000</pubDate>
+      <guid>http://twitter.com/MacRuby/statuses/4082752004</guid>
+      <link>http://twitter.com/MacRuby/statuses/4082752004</link>
+    </item>
+    <item>
+      <title>MikeG1: Trying to figure out how to have Test::Unit 2.0 around without having to force it on all projects.</title>
+      <description>MikeG1: Trying to figure out how to have Test::Unit 2.0 around without having to force it on all projects.</description>
+      <pubDate>Sun, 13 Sep 2009 00:19:54 +0000</pubDate>
+      <guid>http://twitter.com/MikeG1/statuses/3944550271</guid>
+      <link>http://twitter.com/MikeG1/statuses/3944550271</link>
+    </item>
+    <item>
+      <title>TUAW: The Bookmark App - Audiobooks finally done right http://bit.ly/YnIxR [post]</title>
+      <description>TUAW: The Bookmark App - Audiobooks finally done right http://bit.ly/YnIxR [post]</description>
+      <pubDate>Sat, 12 Sep 2009 22:13:25 +0000</pubDate>
+      <guid>http://twitter.com/TUAW/statuses/3942395264</guid>
+      <link>http://twitter.com/TUAW/statuses/3942395264</link>
+    </item>
+  </channel>
+</rss>
