@@ -1,7 +1,5 @@
-require 'rubygems'
+require 'test_helper'
 require 'twitter_favourites'
-require 'test/unit'
-require 'shoulda'
 
 class TwitterFavouriteTests < Test::Unit::TestCase
   context "get_favourites_from_feed" do
