@@ -30,5 +30,9 @@ class TwitterFavourite
   def pub_date
     @rss_element.xpath('pubDate').inner_text
   end
+
+  def guid
+    @rss_element.xpath('guid').inner_text
+  end
 end
 

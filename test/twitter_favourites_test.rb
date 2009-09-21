@@ -30,5 +30,9 @@ class TwitterFavouriteTests < Test::Unit::TestCase
     should "make the pub date available" do
       assert_equal("Fri, 18 Sep 2009 16:54:08 +0000", @favourite.pub_date)
     end
+
+    should "make the guid available" do
+      assert_equal("http://twitter.com/MacRuby/statuses/4082752004", @favourite.guid)
+    end
   end
 end
