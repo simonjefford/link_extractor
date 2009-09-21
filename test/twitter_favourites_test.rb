@@ -4,7 +4,7 @@ require 'twitter_favourites'
 class TwitterFavouriteTests < Test::Unit::TestCase
   context "get_favourites_from_feed" do
     setup do
-      @favourites = TwitterFavourite.get_from_feed(File.open("fixtures/favourite.rss", "r"))
+      @favourites = TwitterFavourite.get_from_feed(load_fixture_as_io("favourite.rss"))
     end
 
     should "return an array" do
@@ -18,7 +18,7 @@ class TwitterFavouriteTests < Test::Unit::TestCase
 
   context "TwitterFavourite class" do
     setup do
-      @favourite = TwitterFavourite.get_from_feed(File.open("fixtures/favourite.rss", "r"))[0]
+      @favourite = TwitterFavourite.get_from_feed(load_fixture_as_io("favourite.rss"))[0]
     end
 
     should "make the url available" do
