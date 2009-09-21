@@ -15,6 +15,7 @@ get '/' do
         f.item {
           f.title favourite.url
           f.description favourite.url
+          f.pubDate favourite.pub_date
         }
       end
     }
