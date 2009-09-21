@@ -26,5 +26,9 @@ class TwitterFavourite
   def url
     @rss_element.xpath('title').inner_text.split.grep(/#{URL_REGEX}/)[0]
   end
+
+  def pub_date
+    @rss_element.xpath('pubDate').inner_text
+  end
 end
 

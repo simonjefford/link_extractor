@@ -26,5 +26,9 @@ class TwitterFavouriteTests < Test::Unit::TestCase
     should "make the url available" do
       assert_equal("http://bit.ly/Hc5ct", @favourite.url)
     end
+
+    should "make the pub date available" do
+      assert_equal("Fri, 18 Sep 2009 16:54:08 +0000", @favourite.pub_date)
+    end
   end
 end
