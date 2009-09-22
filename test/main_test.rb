@@ -20,5 +20,9 @@ class MainTest < Test::Unit::TestCase
     should "return an OK HTTP status" do
       assert last_response.ok?
     end
+
+    should "return a Cache-Control header so the feed will be cached for an hour" do
+      assert_equal "max-age=3600", last_response['Cache-Control']
+    end
   end
 end
