@@ -7,6 +7,10 @@ class Test::Unit::TestCase
     File.open(fixture_path(fixture), "r")
   end
 
+  def load_fixture_as_string(fixture)
+    File.read(fixture_path(fixture))
+  end
+
   private
 
   def fixture_path(fixture)
