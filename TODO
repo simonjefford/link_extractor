@@ -1,3 +1,1 @@
-Caching (HTTP caching - use herokus shiny infrastructure)
-main_test => FakeWeb should return HTTP OK for 'any' (that isn't the main feed)
-Recover from errors properly when expanding URL
+Get the title of the page at the URL and use that as the RSS title
