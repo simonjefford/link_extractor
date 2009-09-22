@@ -22,7 +22,7 @@ class MainTest < Test::Unit::TestCase
     end
 
     should "return a Cache-Control header so the feed will be cached for an hour" do
-      assert_equal "max-age=3600", last_response['Cache-Control']
+      assert_equal "public, max-age=3600", last_response['Cache-Control']
     end
   end
 end
