@@ -24,7 +24,15 @@ class TwitterFavourite
   end
 
   def url
-    @rss_element.xpath('title').inner_text.split.grep(/#{URL_REGEX}/)[0]
+    return @url if @url
+    url = @rss_element.xpath('title').inner_text.split.grep(/#{URL_REGEX}/)[0]
+    uri = URI.parse(url)
+    h = Net::HTTP.new(uri.host)
+    response = h.head(uri.request_uri)
+    @url = case response
+    when Net::HTTPSuccess then url
+    when Net::HTTPRedirection then response['location']
+    end
   end
 
   def pub_date

@@ -19,10 +19,11 @@ class TwitterFavouriteTests < Test::Unit::TestCase
   context "TwitterFavourite class" do
     setup do
       @favourite = TwitterFavourite.get_from_feed(load_fixture_as_io("favourite.rss"))[0]
+      FakeWeb.register_uri(:head, "http://bit.ly/Hc5ct", :status => [301, 'Moved'], :location => "http://expandedurl.com")
     end
 
-    should "make the url available" do
-      assert_equal("http://bit.ly/Hc5ct", @favourite.url)
+    should "make the expanded url available" do
+      assert_equal("http://expandedurl.com", @favourite.url)
     end
 
     should "make the pub date available" do
