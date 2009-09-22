@@ -1,2 +1,3 @@
-Caching
+Caching (HTTP caching - use herokus shiny infrastructure)
 main_test => FakeWeb should return HTTP OK for 'any' (that isn't the main feed)
+Recover from errors properly when expanding URL
