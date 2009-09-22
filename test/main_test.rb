@@ -1,6 +1,5 @@
 require 'test_helper'
 require 'main'
-require 'fakeweb'
 require 'rack/test'
 require 'net/http'
 
