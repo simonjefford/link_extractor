@@ -1,6 +1,9 @@
 require 'rubygems'
 require 'test/unit'
 require 'shoulda'
+require 'fakeweb'
+
+FakeWeb.allow_net_connect = false
 
 class Test::Unit::TestCase
   def load_fixture_as_io(fixture)
