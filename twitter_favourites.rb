@@ -34,7 +34,7 @@ class TwitterFavourite
       when Net::HTTPSuccess then url
       when Net::HTTPRedirection then response['location']
       end
-    rescue
+    rescue Timeout::Error
       # Something went wrong expanding this url
       @url
     end
